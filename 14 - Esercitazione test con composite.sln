@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33815.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14 - Esercitazione test con composite", "14 - Esercitazione test con composite\14 - Esercitazione test con composite.csproj", "{9E6FCA90-029F-4659-8B62-1E18CD27A719}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Classi", "Classi\Classi.csproj", "{9A0C5B8A-51D5-4F6C-9973-232B6CA54C3C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9E6FCA90-029F-4659-8B62-1E18CD27A719}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E6FCA90-029F-4659-8B62-1E18CD27A719}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E6FCA90-029F-4659-8B62-1E18CD27A719}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E6FCA90-029F-4659-8B62-1E18CD27A719}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A0C5B8A-51D5-4F6C-9973-232B6CA54C3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A0C5B8A-51D5-4F6C-9973-232B6CA54C3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A0C5B8A-51D5-4F6C-9973-232B6CA54C3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A0C5B8A-51D5-4F6C-9973-232B6CA54C3C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {08009BA9-72F6-47D2-8DC9-7D3061DF4E4D}
+	EndGlobalSection
+EndGlobal

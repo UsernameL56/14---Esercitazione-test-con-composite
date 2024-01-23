@@ -19,7 +19,7 @@ namespace Classi
         }
 
         // costruttore
-        public VeroFalso(string _testo)
+        public Singola(string _testo)
         {
             Testo = _testo;
         }

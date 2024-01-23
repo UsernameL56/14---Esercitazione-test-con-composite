@@ -39,7 +39,7 @@ namespace Classi
         }
         public override string ToString()
         {
-            return $"testo";
+            return $"{Testo}";
         }
     }
 }

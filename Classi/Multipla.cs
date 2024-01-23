@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Classi
 {
-    public class Singola : Componente
+    public class Multipla : Componente
     {
         // attributi
         private string _testo;
@@ -19,7 +19,7 @@ namespace Classi
         }
 
         // costruttore
-        public Singola(string _testo)
+        public Multipla(string _testo)
         {
             Testo = _testo;
         }

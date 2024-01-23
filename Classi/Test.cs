@@ -9,44 +9,44 @@ namespace Classi
     public class Test : Componente
     {
         // attributi
-        List<Componente> _componenti = new List<Componente>();
+        List<Componente> _domanda = new List<Componente>();
 
         // metodi accessor
-        public List<Componente> Componenti
+        public List<Componente> Domanda
         {
-            get { return _componenti; }
-            set { _componenti = value; }
+            get { return _domanda; }
+            set { _domanda = value; }
         }
 
         // costruttore
-        public Test(List<Componente> _componenti)
+        public Test(List<Componente> _domanda)
         {
-            Componenti = _componenti;
+            Domanda = _domanda;
         }
 
         // metodi
-        public override void Add(Componente componente)
+        public override void Add(Componente domanda)
         {
-            Componenti.Add(componente);
+            Domanda.Add(domanda);
         }
         public override void Remove(int indice)
         {
-            if (indice >= 0 && indice < Componenti.Count)
-                Componenti.RemoveAt(indice);
+            if (indice >= 0 && indice < Domanda.Count)
+                Domanda.RemoveAt(indice);
         }
         public override Componente GetChild(int indice)
         {
-            if(indice < Componenti.Count)
-                return Componenti[indice];
+            if(indice < Domanda .Count)
+                return Domanda[indice];
             else
                 return null;
         }
         public override string ToString()
         {
             string stringa = "";
-            foreach(Componente componente in Componenti)
+            foreach(Componente domanda in Domanda)
             {
-                stringa += componente.ToString();
+                stringa += domanda.ToString();
             }
 
             return stringa;

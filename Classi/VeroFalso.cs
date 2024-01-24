@@ -6,40 +6,26 @@ using System.Threading.Tasks;
 
 namespace Classi
 {
-    public class VeroFalso : Componente
+    public class VeroFalso : Domanda
     {
-        // attributi
-        private string _testo;
-
-        // metodi accessor
-        public string Testo
-        {
-            get { return _testo; }
-            set { _testo = value; }
-        }
-
         // costruttore
-        public VeroFalso(string _testo)
+        public VeroFalso(List<Componente> risposta, string _testo) : base(risposta, _testo)
         {
-            Testo = _testo;
-        }
 
+        }
         // metodi
-        public override void Add(Componente componente)
+        public override int CalcoloPunteggio()
         {
-            throw new NotImplementedException();
-        }
-        public override void Remove(int indice)
-        {
-            throw new NotImplementedException();
-        }
-        public override Componente GetChild(int indice)
-        {
-            throw new NotImplementedException();
-        }
-        public override string ToString()
-        {
-            return $"{Testo}";
+            int punteggio = 0;
+
+            foreach(Risposta risposta in Risposta)
+            {
+                if (risposta.Correttezza)
+                {
+                    punteggio += risposta.Punteggio;
+                }
+            }
+            return punteggio;
         }
     }
 }

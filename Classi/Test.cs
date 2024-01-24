@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,7 +10,7 @@ namespace Classi
     public class Test : Componente
     {
         // attributi
-        List<Componente> _domanda = new List<Componente>();
+        private List<Componente> _domanda = new List<Componente>();
 
         // metodi accessor
         public List<Componente> Domanda
@@ -50,6 +51,34 @@ namespace Classi
             }
 
             return stringa;
+        }
+        public override bool Equals(object obj)
+        {
+            if(obj == null || GetType() != obj.GetType())
+                return false;
+
+            Test test2 = (Test)obj;
+            
+            foreach (var domanda in Domanda)
+            {
+                if (!domanda.Equals(test2))
+                {
+                    return false;
+                }
+            }
+
+            return true;
+
+        }
+        public override int CalcoloPunteggio()
+        {
+            int punteggio = 0;
+            foreach (var domanda in Domanda)
+            {
+                punteggio += domanda.CalcoloPunteggio();
+            }
+
+            return punteggio;
         }
     }
 }

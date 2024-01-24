@@ -14,6 +14,6 @@ namespace Classi
         public abstract Componente GetChild(int indice);
         public abstract string ToString();
         public abstract bool Equals(object obj);
-        public abstract int Punteggio();
+        public abstract int CalcoloPunteggio();
     }
 }
